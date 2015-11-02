@@ -2,36 +2,46 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net"
+	"netlib"
 	"util"
 )
 
 func main() {
 	var (
-		host   = "127.0.0.1"
-		port   = "7000"
-		remote = host + ":" + port
-		//reader = bufio.NewReader(os.Stdin)
+		gameRun = true
 	)
 
-	listen, err := net.Listen("tcp", remote)
+	initialize()
+
+	listen := new(netlib.PeerListener)
+	err := listen.Start("127.0.0.1:7700")
+	util.CheckErrorCrash(err, "listen.Start")
 	defer listen.Close()
-	util.CheckErrorCrash(err)
 
-	// 等待客户端连接
+	log.Println("gameserver start...")
 	for {
-		conn, err := listen.Accept()
-		if err != nil {
-			log.Println("Accept error: ", err)
-			continue
+		if !gameRun {
+			break
 		}
-		go connection.NewConnection(conn)
 	}
+	log.Println("gameserver end...")
 
-	go onConnectEvent(listen)
-	fmt.Println("gameserver start...")
 }
 
-func onConnectEvent(listen net.Listener) {
-	fmt.Println("onconn")
+func initialize() {
+	fmt.Println("\nServer initializing...\n")
+
+	// 开启多核
+	runtime.GOMAXPROCS(runtime.NumCPU())
+	fmt.Println("Multi-CPU support active, current CPUs in use: ", runtime.NumCPU(), "\n")
+
+	// 开启控制台
+	go console.Console()
+	fmt.Println("Server console activated.\n")
+
+	// 准备通信线程
+	go message.Message()
+	fmt.Println("Message routines ready...\n")
 }

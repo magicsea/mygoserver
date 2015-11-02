@@ -6,9 +6,9 @@ import (
 	"os"
 )
 
-func CheckErrorCrash(err error) {
+func CheckErrorCrash(err error, addon string) {
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "fatal error:%s", err.Error())
+		fmt.Fprintf(os.Stderr, "%s.fatal error:%s", addon, err.Error())
 		log.Fatal("fatal error:%s", err.Error())
 		os.Exit(1)
 	}
