@@ -1,0 +1,563 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"Listener	interface ¡"
+			],
+			[
+				"regis",
+				"RegisterChanRPC	 ƒ"
+			],
+			[
+				"jso",
+				"JSONProcessor	*json.Processor ν"
+			],
+			[
+				"pro",
+				"ProtobufProcessor	*protobuf.Processor ν"
+			],
+			[
+				"sr",
+				"Sprintf	string ƒ"
+			],
+			[
+				"di",
+				"DialTCP	*net.TCPConn, error ƒ"
+			],
+			[
+				"pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"p",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"respo",
+				"ResponseWriter	interface ¡"
+			],
+			[
+				"sp",
+				"Sprintf	string ƒ"
+			],
+			[
+				"fu",
+				"func (*vec)	func (...) {...} ʂ"
+			],
+			[
+				"pri",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"sq",
+				"Sqrt	float64 ƒ"
+			],
+			[
+				"print",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"func",
+				"func	func {...} ʂ"
+			],
+			[
+				"imp",
+				"import	import (...) ʂ"
+			],
+			[
+				"fun",
+				"function	function"
+			],
+			[
+				"gam",
+				"GameManager"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"sourc",
+				"source_content"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"t",
+				"table	Tag"
+			],
+			[
+				"mi",
+				"mid"
+			],
+			[
+				"rg",
+				"regionId"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"isn",
+				"is_null"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"us",
+				"userid"
+			],
+			[
+				"ex",
+				"explode"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"end",
+				"endTime"
+			],
+			[
+				"star",
+				"start_time"
+			],
+			[
+				"minl",
+				"minlevel"
+			],
+			[
+				"log",
+				"login_end_time"
+			],
+			[
+				"loginti",
+				"logintime"
+			],
+			[
+				"min",
+				"minExp"
+			],
+			[
+				"maxl",
+				"maxlevel"
+			],
+			[
+				"level",
+				"levels"
+			],
+			[
+				"lev",
+				"levels"
+			],
+			[
+				"ma",
+				"maxExp"
+			],
+			[
+				"le",
+				"level"
+			],
+			[
+				"www",
+				"WWW"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"range",
+				"rangelimit"
+			],
+			[
+				"js",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"Package Control: add",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: Build"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 208.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'  ",
+			"go install",
+			"11111111111111",
+			"ffff",
+			"go install -gcflags \"-N -l\"",
+			"go env",
+			"f"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/wywork/go/projects/mygoserver/src/gameserver/serverMain.go",
+		"/D/wywork/go/projects/dy_GameServer/client/client.go",
+		"/D/wywork/go/projects/mygoserver/README.md",
+		"/D/wywork/go/projects/mygoserver/src/serverMain.go",
+		"/D/wywork/go/projects/mygoserver/mygoserver",
+		"/D/wywork/go/projects/leafserver/src/github.com/golang/protobuf/proto/lib.go",
+		"/D/wywork/go/projects/earthshaker/src/es/EventDispatch.go",
+		"/D/wywork/go/projects/GrapesGameEngineWeb/Server/Common/Src/TSTCP/TSTCP.go",
+		"/D/wywork/go/proj/src/astar.go",
+		"/D/wywork/ws2/Assets/Scripts/GameLogic/Tegra2Only.cs",
+		"/D/wywork/go/projects/leaf/network/tcp_conn.go",
+		"/D/wywork/go/projects/leafserver/src/client/clientMain.go",
+		"/D/wywork/go/proj/src/test.go",
+		"/D/wywork/go/projects/leaf/leaf.go",
+		"/D/wywork/go/projects/leaf/module/module.go",
+		"/D/wywork/go/projects/leafserver/src/server/game/internal/module.go",
+		"/D/wywork/go/projects/leafserver/src/server/msg/msg.go",
+		"/D/wywork/go/proj/src/sample/sample1.go",
+		"/D/wywork/go/projects/leaf/chanrpc/chanrpc.go",
+		"/D/wywork/go/projects/leafserver/src/server/gate/internal/module.go",
+		"/D/wywork/go/projects/leafserver/bin/conf/server.json",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoSublime/GoSublime.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/GoGdb.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/GoSublime.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/pm.sublime-settings",
+		"/D/wywork/go/projects/leaf/db/mongodb/mongodb.go",
+		"/D/wywork/go/projects/leaf/go/go.go",
+		"/D/wywork/go/projects/leaf/README.md",
+		"/D/wywork/go/liteide_q4/share/liteide/liteenv/win64-user.env",
+		"/D/wywork/go/liteide_q4/share/liteide/liteenv/win64.env",
+		"/D/wywork/go/liteide/share/liteide/liteenv/win64-user.env",
+		"/D/wywork/go/liteide/share/liteide/liteenv/win64.env",
+		"/D/wywork/go/liteide-master/liteidex/os_deploy/windows/liteenv/win64.env",
+		"/D/wywork/go/go-build.sublime-build",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/goRun.sublime-build",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/myGoBuild.sublime-build",
+		"/D/wywork/go/proj/go-build.sublime-build",
+		"/D/wywork/go/proj/test.go",
+		"/D/wywork/go/proj/main.go",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoGdb/GoGdb.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoSublime/README.md",
+		"/C/Users/小梦/Desktop/go-build.sublime-build",
+		"/D/wywork/go/proj/gotest.go",
+		"/D/wywork/go/gotest.go",
+		"/D/wywork/go/main.go",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoSublime/CHANGELOG.md",
+		"/D/wywork/Server_Deploy/MobaServer/Master/MobaMasterConfig.xml",
+		"/D/Downloads/nlua/NLua.Unity3D/Assets/Example/TestBehaviour.cs",
+		"/D/Downloads/nlua/NLua.Unity3D/Assets/Example/ExampleBehaviour.cs",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpSampleClient/bin/Release/TestPvpClient.dll.config",
+		"/D/wywork/Documents/DataConfig/bin/cs_zh/SysSkillBuffVo.cs",
+		"/D/wywork/Server_Deploy/MobaServer/Master/MobaDBConfig.xml",
+		"/D/wywork/Server_Deploy/MobaServer/Master/MobaGameConfig.xml",
+		"/D/wywork/Server_Src/.git/config",
+		"/D/wywork/Server_Deploy/MapSpawnPoints.xml",
+		"/D/gittet/gitg1/readme",
+		"/D/wywork/Server_Src/README.md",
+		"/D/wywork/MOBA-Heros-v0.3_r/pvp.cd",
+		"/D/wywork/Server_Deploy/bin_Win64/PhotonServer.config",
+		"/D/wywork/testserver/echoAgent/bin/Debug/echoAgent.exe.config",
+		"/D/wywork/MOBA-Heros-v0.3/Assets/Bundles/Android/BundleInfos.xml",
+		"/C/MapSpawnPoints.xml",
+		"/C/Users/小梦/Desktop/MobaDBConfig.xml",
+		"/C/Users/小梦/Desktop/MobaMasterConfig.xml",
+		"/C/Users/小梦/Desktop/MobaGameConfig.xml",
+		"/D/wywork/Documents/DataConfig/tools/xml2bin.xml",
+		"/D/redis-2.8.17/redis-3.0-annotated-unstable/src/slowlog.c",
+		"/D/Downloads/Socket-Part2/AsynClientConsole/AsynClientConsole/AsynTcpClient.cs",
+		"/D/Downloads/Socket-Part2/AsynClientConsole/AsynClientConsole/AsynUdpClient.cs",
+		"/D/Downloads/Socket-Part2/AsynServerConsole/AsynServerConsole/program.cs",
+		"/D/Downloads/Socket-Part2/AsynServerConsole/AsynServerConsole/AsynTcpServer.cs",
+		"/D/Downloads/Socket-Part2/AsynServerConsole/AsynServerConsole/AsynUdpServer.cs",
+		"/D/redis-2.8.17/dump.rdb",
+		"/D/redis-2.8.17/redis.1.conf",
+		"/D/SCUTServer/Console/Script/LuaScript/Action/Action1001.lua",
+		"/D/SCUTServer/SRC/Scut/Source/Framework/发布处理.bat",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/log/MobaServer.lobby_error.log20150707",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/Panels/fightpanel.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/Panels/loginpanel.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/Class.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/game.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/uitool.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/networkPhoton.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/behaviourbase.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/network.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/define.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/core/math.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/core/oo.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/core/string.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/core/table.lua",
+		"/D/NinjaYo/trunk/project_ninjaFly/code/ninjaFly/Assets/Lua/Panels/be1.lua",
+		"/D/wywork/DataConfig_PVP/bin/xml_zh/SysAiConfigVo.xml",
+		"/D/wywork/DataConfig_PVP/bin/xml_zh/SysBattleSceneVo.xml",
+		"/D/wywork/DataConfig_PVP/tools/xml2bin.xml",
+		"/D/NinjaYo/trunk/project_lol/LightGameServer/LightGameServer/gameserver/bin/Debug/log4net.config",
+		"/D/NinjaYo/trunk/project_lol/LightGameServer/LightGameServer/gameserver/bin/Debug/Lua/init.lua",
+		"/C/Users/小梦/Documents/Tencent Files/313451394/FileRecv/YURI-CUT (1).json",
+		"/C/Users/小梦/Documents/Tencent Files/313451394/FileRecv/YURI-CUT (2).json",
+		"/C/Users/小梦/Documents/Tencent Files/313451394/FileRecv/YURI-CUT.atlas",
+		"/C/Users/小梦/Documents/Tencent Files/313451394/FileRecv/YURI-CUT.json",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/pvpserver/Lua/core/oo.lua",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/Master/bin/log4net.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpSampleClient/bin/Debug/Lua/test.lua",
+		"/D/wywork/server_release/deploy/MobaServer/pvpserver/setup_MobaServer.pvpserver2.xml",
+		"/D/wywork/server_release/deploy/MobaServer/pvpserver/setup_MobaServer.pvpserver.xml",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/CounterPublisher/SocketServerCounter.cs",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/pvpserver/Lua/public.lua",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/Policy/assets/socket-policy-silverlight.xml",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/Policy/assets/socket-policy.xml",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/MobaServer/Config/GameServer1/MobaServer.dll.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/Master/bin/MobaServer.dll.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/GameServer2/bin/MobaServer.dll.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/GameServer1/bin/MobaServer.dll.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/bin_Win64/PhotonServer.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/pvpserver/setup_MobaServer.pvpserver.xml",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/pvpserver/log4net.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MapSpawnPoints.xml",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/lobby/PvpLobby.dll.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpAgent/bin/Debug/TestPvpAgent.exe.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpSampleClient/bin/Release/TestPvpSampleClient.exe.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpAgent/bin/Release/TestPvpAgent.vshost.exe.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/PvpServer/PvpServer.csproj.user",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/MobaProtocol/MobaPvpCode.cs",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/src-server/MobaServer/TestPvpAgent/bin/Release/TestPvpAgent.exe.config",
+		"/D/wywork/Servers/ExitGames-Photon-Server-SDK_v3-4-22-6309/deploy/MobaServer/pvpserver/PvpServer.dll.config",
+		"/D/wywork/server_libevent/libevent_win32_include/event2/util.h",
+		"/D/wywork/server_libevent/libevent-2.0.22-stable/Makefile.nmake"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\wywork\\go\\projects\\leafserver",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Create_Client",
+			"1",
+			"tcpClient",
+			"udpServer",
+			"AsynSend",
+			"DataUpdate attackerId error",
+			"DataUpdate keyvalue: 1",
+			"DataUpdate",
+			"ERROR",
+			"lobby",
+			"10.10.10.88",
+			"SpawnOneEnemyWave",
+			"SpawnEnemyWaves_Coroutine",
+			"SpawnEnemyWaves",
+			"doSpawnStart",
+			"CJSON_MODNAME",
+			"cjson",
+			"luaopen_protobuf_c",
+			"open",
+			"proto",
+			"pb",
+			"openlibs",
+			"openlib",
+			"openlibs",
+			"luaopen_table",
+			"luaL_openlibs",
+			"openlibs",
+			"luaL_openlib",
+			"luaL_openlibs",
+			"luaL_openlib",
+			"luaL_openlibs",
+			"openlib",
+			"luaL_openlib",
+			".c",
+			"lib",
+			"BuildAssetBundles",
+			"length",
+			"login_start_time",
+			"select",
+			",\n",
+			"CHARSET=latin1",
+			"Paging",
+			"bcread_uleb128",
+			"bcread_header",
+			"cannot load incompatible bytecode",
+			"MessagePanel",
+			"m",
+			"8080",
+			"passport",
+			"();\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"127.0.0.1",
+			"CHARSET=utf8"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "mygoserver.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

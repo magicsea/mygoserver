@@ -1,47 +1,68 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net"
+	"console"
+	"elog"
 	"netlib"
+	//"os/signal"
+	"runtime"
 	"util"
+)
+
+const (
+	CONN_NEW byte = iota
+	// read write
+	CONN_READ
+	CONN_WRITE
+	CONN_CLOSE
+	EVENT_MAX
 )
 
 func main() {
 	var (
-		gameRun = true
+		gameRun   = true
+		gameFrame = 0
 	)
 
-	initialize()
+	elog.InitLog(elog.INFO, true)
 
+	initialize()
 	listen := new(netlib.PeerListener)
-	err := listen.Start("127.0.0.1:7700")
+	err := listen.Start("127.0.0.1:7702")
 	util.CheckErrorCrash(err, "listen.Start")
 	defer listen.Close()
 
-	log.Println("gameserver start...")
+	startup()
+	elog.LogInfo("gameserver start...")
 	for {
 		if !gameRun {
 			break
 		}
+		gameFrame++
+		MainFrameRun(gameFrame)
 	}
-	log.Println("gameserver end...")
+	elog.LogInfo("gameserver end...")
+	elog.Flush()
+
+}
+
+func MainFrameRun(gameFrame int) {
+	//log.Println(gameFrame)
 
 }
 
 func initialize() {
-	fmt.Println("\nServer initializing...\n")
+	elog.LogInfo("\nServer initializing...\n")
 
 	// 开启多核
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	fmt.Println("Multi-CPU support active, current CPUs in use: ", runtime.NumCPU(), "\n")
+	elog.LogInfo("current CPUs: ", runtime.NumCPU(), "\n")
 
 	// 开启控制台
 	go console.Console()
-	fmt.Println("Server console activated.\n")
+	elog.LogInfo("Server console activated.\n")
+}
 
-	// 准备通信线程
-	go message.Message()
-	fmt.Println("Message routines ready...\n")
+func startup() {
+
 }
