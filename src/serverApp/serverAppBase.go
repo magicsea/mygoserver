@@ -3,11 +3,14 @@ package serverApp
 import (
 	"console"
 	"elog"
+	"net"
 	"netlib"
+	peer "netlib/peer"
 	"runtime"
 	"util"
 )
 
+type ConsoleCMD console.ConsoleCMD
 type ServerAppBase struct {
 	Address  string
 	LogLevel int
@@ -25,7 +28,7 @@ func (self *ServerAppBase) Run() {
 	self.initialize()
 
 	listen := new(netlib.PeerListener)
-	err := listen.Start(self.Address)
+	err := listen.Start(self.Address, self.CreatePeer)
 	util.CheckErrorCrash(err, "listen.Start")
 	defer listen.Close()
 
@@ -53,4 +56,10 @@ func (self *ServerAppBase) onStart() {
 func (self *ServerAppBase) onEnd() {
 	elog.LogInfo("gameserver end...")
 	elog.Flush()
+}
+
+//创建peer接口接口
+func (self *ServerAppBase) CreatePeer(conn net.Conn) *peer.PeerBase {
+	peer := &peer.PeerBase{}
+	return peer
 }

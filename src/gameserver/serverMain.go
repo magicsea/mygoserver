@@ -1,7 +1,7 @@
 package main
 
 import (
-	"console"
+	//"console"
 	"elog"
 	"netlib"
 	//"os/signal"
@@ -28,7 +28,7 @@ func main() {
 
 	initialize()
 	listen := new(netlib.PeerListener)
-	err := listen.Start("127.0.0.1:7702")
+	err := listen.Start("127.0.0.1:7702", nil)
 	util.CheckErrorCrash(err, "listen.Start")
 	defer listen.Close()
 
@@ -59,7 +59,7 @@ func initialize() {
 	elog.LogInfo("current CPUs: ", runtime.NumCPU(), "\n")
 
 	// 开启控制台
-	go console.Console()
+	//go console.Console(make(chan byte), nil)
 	elog.LogInfo("Server console activated.\n")
 }
 

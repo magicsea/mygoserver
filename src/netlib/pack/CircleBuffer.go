@@ -1,10 +1,11 @@
 //author by xin.zhao
 
-package es
+package pack
 
 import (
-    "errors"
+	"errors"
 )
+
 /*
 type:           [1]
 iter:     begin(2)     end(8)
@@ -76,24 +77,24 @@ func (b *CircleBuffer) SkipWrite(size int) {
 	}
 }
 
-func (b *CircleBuffer) Write(data []byte) ( n int ,err error ) {
+func (b *CircleBuffer) Write(data []byte) (n int, err error) {
 
 	size := len(data)
 
 	if !b.CanWrite(size) {
-        
-        n = 0
-        err = errors.New(" buf is flow ...")
-		return 
+
+		n = 0
+		err = errors.New(" buf is flow ...")
+		return
 	}
 
 	b.realWrite(data)
 
 	b.SkipWrite(size)
-    
-    n = size 
-    err = nil
-	return 
+
+	n = size
+	err = nil
+	return
 }
 
 func (b *CircleBuffer) CanRead(size int) bool {
@@ -108,25 +109,25 @@ func (b *CircleBuffer) SkipRead(size int) {
 	}
 }
 
-func (b *CircleBuffer) Read(data []byte) ( n int , err error ) {
+func (b *CircleBuffer) Read(data []byte) (n int, err error) {
 
 	size := len(data)
 
 	if !b.CanRead(size) {
-		
-        n = 0
-        err = errors.New("not enough read byte")
-        
-        return 
+
+		n = 0
+		err = errors.New("not enough read byte")
+
+		return
 	}
 
 	b.realRead(data)
 
 	b.SkipRead(size)
 
-    n = size
-    err = nil
-	return 
+	n = size
+	err = nil
+	return
 }
 
 func (b *CircleBuffer) Store() {

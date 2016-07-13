@@ -9,10 +9,11 @@ import (
 type PeerBase peer.PeerBase
 type PeerList []peer.PeerBase
 type PeerListener struct {
-	Address   string
-	IdCreator int64
-	Peers     PeerList
-	Listen    net.Listener
+	Address        string
+	IdCreator      int64
+	Peers          PeerList
+	Listen         net.Listener
+	createPeerFunc CreatePeerCallBack
 }
 
 func (p *PeerListener) NewId() int64 {
@@ -20,9 +21,11 @@ func (p *PeerListener) NewId() int64 {
 	return p.IdCreator
 }
 
-func (p *PeerListener) Start(address string) error {
-	p.Address = address
+type CreatePeerCallBack func(conn net.Conn) *peer.PeerBase
 
+func (p *PeerListener) Start(address string, callback CreatePeerCallBack) error {
+	p.Address = address
+	p.createPeerFunc = callback
 	//监听
 	listen, err := net.Listen("tcp", p.Address)
 	p.Listen = listen
@@ -56,7 +59,7 @@ func (p *PeerListener) StartAcceptPeer() {
 func (p *PeerListener) OnAcceptNewPeer(conn net.Conn) {
 	log.Println("OnAcceptNewPeer", conn.RemoteAddr())
 
-	newpeer := peer.NewPeer(p.NewId(), conn)
-
+	newpeer := p.createPeerFunc(conn)
+	newpeer.SetID(p.NewId())
 	go newpeer.Run()
 }
