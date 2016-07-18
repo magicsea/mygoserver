@@ -35,6 +35,13 @@ func (p *PeerBase) SetID(id int64) {
 
 //peer主线程
 func (p *PeerBase) Run() {
+	defer func() {
+		conn.Close()
+		if err := recover(); err != nil {
+			printf("panic: %v\n\n%s", err, debug.Stack())
+		}
+	}()
+
 	//rw work
 	go p.ReadWork()
 	go p.WriteWork()
