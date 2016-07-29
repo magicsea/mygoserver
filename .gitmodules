@@ -1,3 +1,0 @@
-[submodule "src/github.com/pebbe/zmq4"]
-	path = src/github.com/pebbe/zmq4
-	url = https://github.com/pebbe/zmq4
